@@ -1,0 +1,416 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100;
+}
+
+.App {
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card_slider {
+  border: 0 !important;
+}
+
+.link {
+  color: #000;
+  text-decoration: none;
+}
+
+.slick-track {
+  display: flex !important;
+  gap: 0.5rem;
+}
+
+.active-link {
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+
+.img_card_slide {
+  height: 225px;
+}
+
+.body_card_slider {
+  padding: 0 8px !important;
+  height: 210px;
+}
+
+.body_card_item {
+  padding: 10px 0px !important;
+}
+
+.img_card_item {
+  height: 200px;
+}
+
+.name_card_item {
+  padding: 10px 2px;
+  font-weight: bold !important;
+  font-size: 18px !important;
+}
+
+.story_detail_item {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  padding-left: 10px;
+  padding-bottom: 8px;
+}
+
+.item_primary {
+  width: 100px;
+  font-weight: bold;
+  color: #000;
+}
+
+.content_header {
+  list-style: none;
+}
+
+.content_header_detail {
+  color: #0dcaf0;
+  line-height: 28px;
+  font-size: 24px;
+}
+
+.img_detail {
+  width: 210px;
+  height: 290px;
+}
+
+.top_container_img {
+  width: 80px !important;
+  height: 60px;
+  overflow: hidden;
+}
+
+.top_img_item {
+  width: 80px !important;
+  height: 80px;
+}
+
+.top_name_item,
+.top_view_item,
+.top_chapter_item {
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.top_container_img,
+.top_name_item {
+  cursor: pointer;
+}
+
+.top_container_detail {
+  list-style: none;
+}
+
+.top_number_1 {
+  color: #0dcaf0;
+}
+
+.top_number_2 {
+  color: green;
+}
+
+.top_number_3 {
+  color: red;
+}
+
+.top_number {
+  font-size: 20px;
+}
+
+.container_top_number {
+  display: flex;
+  align-items: center;
+}
+
+.content_header_item {
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(87, 86, 86);
+}
+
+.content_header_list_item {
+  border-bottom: 1px dashed #afb3b7;
+}
+
+.color_grey {
+  color: #828486;
+}
+
+.name_chapter {
+  text-decoration: none;
+}
+
+.name_chapter:hover {
+  color: rgb(4, 60, 203) !important;
+  font-weight: 700 !important;
+}
+
+.chapter_list_view {
+  font-size: 12px;
+}
+
+.chapter_list_view_time {
+  font-size: 10px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-10 {
+  font-size: 10px;
+}
+
+.slider_list_item {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.back_ground_opacity {
+  opacity: 0.85;
+}
+
+.header_dropdown_width {
+  min-width: 400px;
+}
+
+.custom-cursor {
+  cursor: pointer;
+}
+
+.form-check>input {
+  cursor: pointer;
+}
+
+.over_content {
+  overflow: hidden;
+  position: relative;
+}
+
+.over_content::after {
+  position: absolute;
+  content: '';
+  display: block;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 30px;
+  background: linear-gradient(rgba(255, 255, 255, 0), white);
+}
+
+.read_more:hover {
+  text-decoration: underline;
+  color: #226ad0 !important;
+}
+
+.bg-grey {
+  background-color: #eeeeee;
+}
+
+div.dropdown>a {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+}
+
+.bc_article-chat_view {
+  height: calc(100% - 74px);
+}
+
+.bc_article-message_view {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.enter:hover {
+  background-color: #eaeaea;
+}
+
+.bc_article-message_view::-webkit-scrollbar {
+  width: 4px;
+}
+
+.bc_article-message_view::-webkit-scrollbar-thumb {
+  background-color: rgb(216, 213, 213);
+  border-radius: 6px;
+}
+
+.bc_article-message_view::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.bc_article-message_view::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.bc_article-message_view::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+.img_32 {
+  width: 32px;
+}
+
+.new-content {
+  height: 450px;
+  max-height: 450px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.new-content::-webkit-scrollbar {
+  display: none;
+}
+
+.flx-1 {
+  flex: 1 1;
+}
+
+.hc_story-image_view {
+  height: 52px;
+  width: 52px;
+  margin: 0 10px 0 20px;
+}
+
+.hc_story-image_view>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hc_story-name {
+  font-weight: 500;
+  font-size: 1.085rem;
+}
+
+.detail-time-created,
+.detail-status {
+  font-size: 0.85rem;
+}
+
+.btn-back {
+  padding: 8px 12px;
+  margin-right: 1rem;
+}
+
+.bc-group_input>input.form-control:focus {
+  outline: none !important;
+  border: none;
+  box-shadow: none !important;
+}
+
+.bc-group_input>input.form-control {
+  outline: none !important;
+  border: none;
+}
+
+div.position-relative>svg.bi.bi-three-dots:hover+div.bc-action {
+  display: flex !important;
+}
+
+div.bc-action:hover {
+  display: flex !important;
+}
+
+div.bc-action {
+  font-size: 0.825rem;
+  padding: 10px 4px;
+  display: none !important;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  background-color: #fff;
+  width: 100px;
+  box-shadow: 0.0235rem 0.0335rem 0.1825rem 0.0325rem #ccc,
+    0.0235rem 0.0335rem 0.1825rem 0.0325rem #ccc;
+  border-radius: 6px;
+}
+
+.flx {
+  flex: 1;
+}
+
+.lg_error_message,
+.rg_error_message {
+  font-size: 0.625rem;
+  color: #d70707;
+}
+
+.error {
+  border: 1.25px solid #d70707 !important;
+}
+
+.full-width-background {
+  position: relative;
+}
+
+.full-width-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50vw;
+  width: 100vw;
+  height: 100%;
+  z-index: -1;
+}
+
+.square-input {
+  border-radius: 3 !important;
+  background-color: #374151 !important;
+  border: none !important;
+  padding: 12px !important;
+  color: #9ca3af !important;
+}
+
+.placeholder-color::placeholder {
+  color: #9ca3af !important;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.light-grey {
+  color: rgb(209 213 219) !important;
+}
+
+.light {
+  background-color: white;
+  color: #4b535e;
+}
+
+.dark {
+  background-color: #1e2937 !important;
+  color: rgb(209 213 219) !important;
+}
+
+.bg-body-tertiary-custom {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Define placeholder colors within theme classes */
+.light textarea::placeholder {
+  color: #4b535e; /* Light theme placeholder color */
+}
+
+.dark textarea::placeholder {
+  color: #d1d3cd; /* Dark theme placeholder color */
+}
+.text-blue {
+  color: blue;
+}

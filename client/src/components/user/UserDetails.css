@@ -1,0 +1,351 @@
+a {
+    text-decoration: none;
+}
+
+.user-page {
+    position: relative;
+}
+
+.user-page .postname {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 22px;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.postname:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #ee2c74;
+    margin-top: 5px;
+}
+
+.account-info {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.posttitle {
+    font-weight: 500;
+    border-left: 3px solid #ee2c74;
+    padding-left: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0 0 20px;
+    min-height: 27px;
+
+}
+
+.link {
+    color: #ff9601;
+}
+
+.clearfix:after,
+.clearfix:before {
+    content: " ";
+    display: table;
+}
+
+.user-page .link {
+    position: absolute;
+    top: 3px;
+    right: 0;
+}
+
+.user-page .link:after {
+    margin-left: 10px;
+}
+
+.account-info .info-detail {
+    border: 1px solid #d9d9d9;
+    border-radius: 3px;
+    padding: 15px 20px;
+}
+
+.account-info .info-detail .group {
+    margin-bottom: 10px;
+}
+
+.account-info .info-detail .group .label {
+    float: left;
+    width: 100px;
+    font-size: 100%;
+    text-align: left;
+    font-weight: 400;
+}
+
+.label.hidden {
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.account-info .info-detail .group .detail {
+    display: table-cell;
+    font-weight: 500;
+}
+
+.account-info .info-detail .group .detail a {
+    color: #ff9601;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.user-table {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.user-table .table-responsive {
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+    min-height: 0;
+    overflow-x: auto;
+}
+
+.alert-success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+}
+
+.alert {
+    padding: 15px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.alert,
+.thumbnail {
+    margin-bottom: 20px;
+}
+
+.user-table .table .nowrap {
+    white-space: nowrap;
+}
+
+.user-table .table td {
+    padding: .75rem;
+    vertical-align: top;
+    border-bottom: 1px solid #eceeef;
+}
+
+.user-table .follow-action {
+    margin: 5px 0 7px;
+    font-size: 13px;
+}
+
+.visited {
+    color: #9d9d9d;
+}
+
+
+.chapter a {
+    font-size: 13px;
+    color: #000;
+}
+
+.chapter a:focus,
+.chapter a:visited,
+a.visited {
+    text-decoration: none;
+    color: silver;
+}
+
+.user-table .chapter .time {
+    float: none;
+}
+
+.user-table .time {
+    font-size: 12px;
+    color: #999;
+}
+
+
+.user-table .table a.image {
+    display: block;
+    width: 100px;
+    max-height: 100px;
+    overflow: hidden;
+    line-height: 100px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.user-table .table th {
+    vertical-align: bottom;
+    padding: .75rem;
+    white-space: nowrap;
+    border-bottom: 2px solid #eceeef;
+    text-transform: uppercase;
+    border: none;
+    border-top: 2px solid #ee2c74;
+    background: #222;
+    color: #fff;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.user-table .follow-action {
+    margin: 5px 0 7px;
+    font-size: 13px;
+}
+
+.user-table .follow-action .mark-as-read {
+    color: #23a903;
+    text-transform: none;
+    white-space: nowrap;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.user-table .follow-action .follow-link {
+    white-space: nowrap;
+    color: #d9534f;
+}
+
+.user-sidebar {
+    margin: 0 0 20px;
+    position: relative;
+}
+
+.user-sidebar .userinfo {
+    background: #222;
+}
+
+.user-sidebar .userinfo figure figcaption {
+    display: table-cell;
+    padding: 15px 5px 15px 10px;
+}
+
+
+.user-sidebar .userinfo figure {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.user-sidebar .userinfo figure .user-img {
+    display: block;
+    width: 80px;
+    float: left;
+}
+
+
+.user-sidebar .userinfo figure figcaption .user-name {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.user-sidebar .userinfo figure figcaption .title {
+    color: #fff;
+    opacity: .8;
+    font-weight: 300;
+}
+
+.chevron-up {
+    position: absolute;
+    top: 40%;
+    right: 5px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.user-sidelink {
+    background: #f2f2f2;
+    margin-bottom: 60px;
+}
+
+.user-sidelink ul li.active {
+    background: #e6e6e6;
+    border-left: 3px solid #ee2c74;
+    font-weight: bold;
+}
+
+.user-sidelink ul li {
+    width: 100%;
+}
+
+.hvr-sweep-to-right {
+    display: inline-block;
+    vertical-align: middle;
+    box-shadow: 0 0 1px transparent;
+    transition-property: color;
+    transition-duration: .3s;
+}
+
+.user-sidelink ul li a {
+    display: block;
+    color: #333;
+    padding: 9px 30px;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+
+.account-edit-label {
+    align-self: center;
+    padding-bottom: 0;
+    padding-right: 10px;
+    text-align: right;
+    width: 160px;
+    color: hsl(var(--hsl-f1));
+    font-weight: 700;
+    order: -1;
+    line-height: 2.5;
+}
+
+.custom-file-label {
+    display: inline-block;
+    margin-left: 6px;
+    padding: .375rem .75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #ffffff;
+    text-align: left;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #ee2c74;
+    border-radius: .5rem;
+    min-width: 128px;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+}
+
+.comic-name {
+    font-weight: 700;
+    color: #ff9601;
+    text-decoration: none;
+}
+
+.following-btn {
+    background: none;
+    border: none;
+    text-decoration: underline;
+    padding: 0;
+}
+
+.follow-btn {
+    color: green;
+}
+
+.unfollow-btn {
+    color: red
+}

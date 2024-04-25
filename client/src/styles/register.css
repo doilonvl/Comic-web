@@ -1,0 +1,74 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.btn-home_link {
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+    color: #000;
+}
+.btn-home_link > svg {
+    padding-bottom: 4px;
+    font-size: 30px;
+}
+.btn-home_link:hover {
+    text-decoration: underline;
+}
+
+.left-part-register {
+    background-image: url('../img/pexels-photo-3945313.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.left-part-login {
+    background-image: url('../img/cinema-4609877_640.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card,
+.card-footer,
+.card-header {
+    border: none;
+}
+
+.row > .right-part {
+    padding: 0;
+}
+
+.card > .register_body_card {
+    padding: 20px 48px;
+}
+
+.form-message {
+    color: rgb(215, 2, 2);
+    padding-left: 15px;
+    font-size: 12px;
+}
+
+.form-group_register {
+    margin: 0;
+}
+
+.form-control_register {
+    font-size: 16px; 
+}
+
+.form-group_register.invalid .form-control_register {
+    border-color: #f33a58;
+}
+
+.form-group_register.invalid .form-message {
+    color: #f33a58;
+}
+.form-check-input {
+    position: absolute;
+    margin-top: 0.435rem;
+    margin-left: -1.25rem;
+    padding: 0;
+}
+.right-part {
+ padding: 0;   
+}

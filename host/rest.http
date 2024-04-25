@@ -1,0 +1,143 @@
+GET http://localhost:9999/story/get_story/65f3df2266cc7c4a6b836fc5
+
+###
+GET http://localhost:9999/categories/all_catergories
+
+###
+POST http://localhost:9999/categories/
+Content-Type: application/json
+
+{
+  "name": "cate 2"
+}
+
+###
+POST http://localhost:9999/users/register/
+Content-Type: application/json
+
+{
+  "userName": "sad",
+  "phoneNumber": "021510",
+  "password": "Pass1111",
+  "email": "dsa@gmail.com"
+}
+
+###
+POST http://localhost:9999/story/create_story
+Content-Type: application/json
+
+{
+  "name": "story 2",
+  "author": "65e5ac14eff5d175cb7f6d8a",
+  "description": "des 1",
+  "image":"https://th.bing.com/th/id/R.3f361912e92ef1e00a301b1c5981e72e?rik=GOY0haWuhsYqyg&pid=ImgRaw&r=0",
+  "categories": [
+    { "value": "65ed2cf0192796d14aa79099" },
+    {"value": "65ed2cfe192796d14aa7909b"}
+  ]
+}
+
+###
+POST  http://localhost:9999/rate
+Content-Type: application/json
+
+{
+  "rateNo": 1,
+  "userId": "65f935aee901b5259dcf87b7",
+  "storyId": "65f3df2266cc7c4a6b836fc5"
+}
+
+###
+GET  http://localhost:9999/rate/general/65f857a07c3109c5da6304e8
+
+###
+GET  http://localhost:9999/comment/getPage/65fad0c94ed0b41f000ba03b
+###
+PUT  http://localhost:9999/comment/65ed6556d21a1d2d1b38cf03
+Content-Type: application/json
+
+{
+  "comment": "comment 4"
+}
+
+###
+POST  http://localhost:9999/comment
+Content-Type: application/json
+
+{
+  "userId": "",
+  "storyId": "",
+  "comment": "comment 1"
+}
+
+###
+GET http://localhost:9999/users/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWU1YWMxNGVmZjVkMTc1Y2I3ZjZkOGEiLCJpYXQiOjE3MTA0ODc5OTMsImV4cCI6MTcxMDQ5MTU5M30.cvb7vdH_Z_HoEVwYh_v9W3TlM67Cjvd6rfiDbEqZjns
+
+### Get following Story
+GET http://localhost:9999/story/follows
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWU1NzY0NjVlNjlhMGJkYzZhMTE4MGYiLCJpYXQiOjE3MTAxMjI3MTMsImV4cCI6MTcxMDEyNjMxM30.9RJVJgwKSxTIYRR2Y8X9el9hA2QRsjCnTR7UNroacBE
+
+
+### Follow Story
+Post http://localhost:9999/story/follow/65efb9aa244382a1b79a54e9
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWU1NzY0NjVlNjlhMGJkYzZhMTE4MGYiLCJpYXQiOjE3MTAyMDc1OTgsImV4cCI6MTcxMDIxMTE5OH0.cgDmLx5Vt9tgPK6EHFq7HyaSAkNHGtFDPGlRfumu_-0
+
+
+### Unfollow Story
+Post http://localhost:9999/story/unfollow/65ec57031b16e9468e67a227
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWU1NzY0NjVlNjlhMGJkYzZhMTE4MGYiLCJpYXQiOjE3MTAxMjI3MTMsImV4cCI6MTcxMDEyNjMxM30.9RJVJgwKSxTIYRR2Y8X9el9hA2QRsjCnTR7UNroacBE
+
+###
+GET  http://localhost:9999/story/65e48b32ea15f34d88d855c4/finished
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWU0NTk0ZTA3OTAzYTQ4MDM3ZGRhNjIiLCJpYXQiOjE3MTAyNTYyNjUsImV4cCI6MTcxMDI1OTg2NX0.XTpWQrbgITUkZd7yBoFwgybOk2Er-pwseyGZSc3EqbQ
+
+###
+GET  http://localhost:9999/story/get_stories?status=&categoryId=
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWU0NTk0ZTA3OTAzYTQ4MDM3ZGRhNjIiLCJpYXQiOjE3MTAyNTYyNjUsImV4cCI6MTcxMDI1OTg2NX0.XTpWQrbgITUkZd7yBoFwgybOk2Er-pwseyGZSc3EqbQ
+###
+GET  http://localhost:9999/story/get_stories?status=&categoryId=0&item=&order=0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWU0NTk0ZTA3OTAzYTQ4MDM3ZGRhNjIiLCJpYXQiOjE3MTAyNTYyNjUsImV4cCI6MTcxMDI1OTg2NX0.XTpWQrbgITUkZd7yBoFwgybOk2Er-pwseyGZSc3EqbQ
+
+###
+GET  http://localhost:9999/story/top_stories
+###
+GET  http://localhost:9999/story/get_stories
+###
+GET  http://localhost:9999/story//get_story/65e48b32ea15f34d88d855c4
+###
+GET  http://localhost:9999/story/updated
+###
+GET  http://localhost:9999/story/search/l
+
+###
+GET http://localhost:9999/story/get_stories?status=finished&categoryId=65e46ffee33a84f0a2e7576e&item=comment&order=1
+
+###
+GET http://localhost:9999/chapter/65e48b32ea15f34d88d855c4/story?limit=10
+
+###
+GET http://localhost:9999/story/get_story/65e48b32ea15f34d88d855c4
+
+###
+GET  http://localhost:9999/story/actived
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWVmYmU3NTI0NDM4MmExYjc5YTU1NDIiLCJpYXQiOjE3MTA3NTY3NjMsImV4cCI6MTcxMDc2MDM2M30.KPVSMBE5ML496vVPJG1TMXb_bi8xvogfRSuaSA2X7Cc
+ 
+###
+GET http://localhost:9999/story/get_list_stories
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWU0NTk0ZTA3OTAzYTQ4MDM3ZGRhNjIiLCJpYXQiOjE3MTA3ODQyMDQsImV4cCI6MTcxMDc4NzgwNH0.C0jFYtQoza_pPzZ_q16NYUOZmixAmSkSTNOM7FZvWVE
+
+###
+POST http://localhost:9999/chapter
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWU0NTk0ZTA3OTAzYTQ4MDM3ZGRhNjIiLCJpYXQiOjE3MTA3ODQyMDQsImV4cCI6MTcxMDc4NzgwNH0.C0jFYtQoza_pPzZ_q16NYUOZmixAmSkSTNOM7FZvWVE
+
+{
+  "isActive": false,
+  "chapterNo": 0,
+  "name": "",
+  "storyId": "65e48b32ea15f34d88d855c4"
+}
